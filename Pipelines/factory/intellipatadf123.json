@@ -1,0 +1,9 @@
+{
+	"name": "intellipatadf123",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "37dfa9f9-c93e-4579-953c-90e2039b098f",
+		"tenantId": "a07823a1-bb59-46a1-8727-21539f295f70"
+	}
+}

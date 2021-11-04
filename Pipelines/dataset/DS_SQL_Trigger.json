@@ -1,0 +1,16 @@
+{
+	"name": "DS_SQL_Trigger",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"table": "autotable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

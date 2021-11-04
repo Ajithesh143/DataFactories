@@ -1,0 +1,16 @@
+{
+	"name": "DS_cosmos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Cosmossep",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "planes"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

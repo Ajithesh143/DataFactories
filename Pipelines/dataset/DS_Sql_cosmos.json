@@ -1,0 +1,34 @@
+{
+	"name": "DS_Sql_cosmos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ICAO",
+				"type": "varchar"
+			},
+			{
+				"name": "IATA",
+				"type": "varchar"
+			},
+			{
+				"name": "MAKER",
+				"type": "varchar"
+			},
+			{
+				"name": "DESCRIPTION",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "planes"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

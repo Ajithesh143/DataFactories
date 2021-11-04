@@ -1,0 +1,55 @@
+{
+	"name": "DS_SQLTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Make",
+				"type": "varchar"
+			},
+			{
+				"name": "Model",
+				"type": "varchar"
+			},
+			{
+				"name": "Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Origin",
+				"type": "varchar"
+			},
+			{
+				"name": "DriveTrain",
+				"type": "varchar"
+			},
+			{
+				"name": "Length",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Mileage",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"table": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

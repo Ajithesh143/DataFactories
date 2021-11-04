@@ -1,0 +1,27 @@
+{
+	"name": "Storage Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_Trigger",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"fileName": "@triggerBody().fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/web/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/3a751abe-b8e7-4651-9a6f-e59e1d3e379b/resourceGroups/azurewebinar/providers/Microsoft.Storage/storageAccounts/ajithblob",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
